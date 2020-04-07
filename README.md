@@ -1,4 +1,4 @@
 # CoinFlipProvable
-oinFlip DApp Exercise
+CoinFlipDAppApprovable Exercise
 
-This DApp was created as part of a mission in the "Ethereum Smart Contract Programming Course". https://academy.ivanontech.com/
+This DApp2 was created as part of a mission in the "Ethereum Smart Contract Programming Course". https://academy.ivanontech.com/
