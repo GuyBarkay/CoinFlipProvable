@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>FlipCoin</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4"> FlipCoin DApp</h1>
+        <p class="lead">Casino Royal </p>
+      </div>
+    </div>
+
+<div class="container">
+
+      <h2>Add Your Gamble</h2>
+<br>
+<p>  0.05 ether <= Bet amount <=0.2 ether </p>
+  <div class="input-group mb-3">
+        <input type="number" min="0"  id="amount_input" placeholder="0.05 <=Amount<= 0.2 Ether " >
+
+        <button type="button" id="flip_button" class="btn btn-primary">flip_button</button>
+      </div>
+
+
+        <h2>Get Your Results</h2>
+
+          <p>  Player Score(1= Win, 0=Loss ): <span id="result_output">  </span> </p>
+          <p>  Player Balance to Withdraw: <span id="player_balance_output"> </span> </p>
+
+          <button type="button" id="playerBalance_button" class="btn btn-primary">player_balance</button>
+<br><br>
+          <button type="button" id="withdraw_player_balance" class="btn btn-primary">withdraw_player_balance</button>
+<br><br>
+
+
+          <br>
+<br> <br>
+========================================================================
+<br><br>
+          <h2> only for Authorized</h2>
+
+
+    <div>
+               <p>  Cashier Status:  <span id="cashier_status">  </span> </p>
+               <br>
+               <p>  Contract Account (Owner + Players) Balance: <span id="balance_output"> </span></p>
+               <br>
+               <p>  Players Aggregate Balance: <span id="players_balance"> </span></p>
+               <br>
+               <p>  Owner Net Balance (required >= 0.21): <span id="balance_Net_output"> </span></p>
+ <br>
+               <button type="button" id="getBalance_button" class="btn btn-primary">get_Balances</button>
+   </div>
+
+<br>
+    <div>
+  <h3>Deposit Money: </h3>
+            <input type="number" min="0"  id="amount_deposit" placeholder="Amount_To_deposit" >
+             <button type="button" id="deposit_button" class="btn btn-primary">deposit_button</button>
+<br><br>
+<button type="button" id="reset_button" class="btn btn-primary">reset_if_call()_interrupted</button>
+    </div>
+     <br>
+     <div>
+
+          <h2> withdrawAll </h2>
+         <button type="button" id="withdrawAll_button" class="btn btn-primary">withdrawAll_button</button>
+     <br> <br> <br>
+ <p> checking mapping - press to consoleLog mapping variable result
+   <br> <br>
+<button type="button" id="getLastFlip_button" class="btn btn-primary">getLastFlip_button</button>
+    </div>
+</div >
+
+
+
+
+  </body>
+</html>
