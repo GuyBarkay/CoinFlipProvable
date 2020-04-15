@@ -56,8 +56,9 @@ contract Coinflip is Ownable1, usingProvable {
    uint b = ownerObligoToPlayers;
    assert (b+210000000000000000 <= a );// make sure positive cashier required by adding max cost + p.01 ether for assurance
    accountBalance =a-b;
-   //acountBalance will be updated after every event that may change the balances/ the address(this).balance
    //require ((msg.value + ownerObligoToPlayers)<= address(this).balance);
+   //acountBalance will be updated after every event that may change the balances/ the address(this).balance
+   
    require(awaitTo[msg.sender]== false,"please wait");
 
 
